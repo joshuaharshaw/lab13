@@ -1,0 +1,47 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+#navbar {
+	height: 75px;
+	text-align: center;
+	background-color: red;
+	color: white;
+	font-size: 3em;
+}
+#choose h3 {
+	text-align: center;
+}
+
+#options {
+	width: 50%;
+	margin:0px auto;
+	display: flex;
+	justify-content: space-around;
+}
+
+#sentence {
+	width: 90%;
+	margin:20px auto;
+	height: 500px;
+	border-radius: 8px;
+	border: 1px solid purple;
+	background: linear-gradient(#ffffb3, #ffff00);
+}
+
+.red {
+	color: red;
+}
+
+.green {
+	color: green;
+}
+
+.outlined {
+	border: 1px solid black;
+}
+
+.uppercase {
+	text-transform: uppercase;
+}

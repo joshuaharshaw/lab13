@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Are you 12?</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body ng-app="wordApp" ng-controller="wordCtrl">
+	<div id="navbar"><header>Are you 6?</header></div>
+
+	<div id="choose">
+		<h3>Wanna add some words?</h3>
+
+		<div id="options">
+			<button type="button" ng-click="addWords()">Add a Word</button>
+			<button type="button" ng-click="addFancyWords()">Add a Fancy-looking Word</button>
+			<button type="button" ng-click="addPhrases()">Add more Words</button>
+			<button type="button" ng-click="addFancyPhrases()">Add more Fancy-looking Words</button>
+		</div>
+	</div>
+
+	<div id="sentence">
+		<span ng-repeat="word in sentence track by $index" class="{{word.class}}">{{word.word}} </span>
+	</div>
+
+</body>
+
+<!-- Angular -->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<!-- Personal JS files -->
+<script src="app.js"></script>
+</html>
