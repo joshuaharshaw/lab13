@@ -1,6 +1,7 @@
 var app = angular.module("wordApp", []);
 
-app.controller("wordCtrl", function ($scope) {
+app.controller("wordCtrl", function ($scope, $interval) {
+
 	$scope.sentence = [];
 
 	$scope.parameters = {
@@ -41,4 +42,6 @@ app.controller("wordCtrl", function ($scope) {
 		$scope.sentence.push(pendPhrase);
 	};
 
+	$interval($scope.addWords, 3000);
 });
+
